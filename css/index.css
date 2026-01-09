@@ -1,0 +1,50 @@
+/*  PAGE BACKGROUND  */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+
+  /* Background image */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../img/image1.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/*  NAVBAR FIX */
+.navbar {
+  padding: 15px;
+}
+
+/*  HOME CONTENT  */
+.home-container {
+  margin-top: 120px;
+  text-align: center;
+}
+
+/*  WELCOME TEXT */
+#welcomeText {
+  font-size: 34px;
+  color: #fdfcfc;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/*  BUTTON AREA */
+.home-buttons a {
+  margin: 10px;
+  padding: 10px 22px;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+/*  BUTTON HOVER */
+.home-buttons a:hover {
+  transform: translateY(-2px);
+}
