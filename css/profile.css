@@ -1,8 +1,13 @@
 /* PAGE BACKGROUND */
+/* PAGE BACKGROUND */
 body {
   margin: 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
+
+  /* flex column to push footer down */
+  display: flex;
+  flex-direction: column;
 
   /* Background image */
   background-image: linear-gradient(
@@ -14,10 +19,16 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.main-content {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
 
 /*  PROFILE CONTAINER  */
 .profile-container {
@@ -27,6 +38,14 @@ body {
   padding: 35px;
   border-radius: 10px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  background: #0b6372;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
 
 /*  TITLE  */

@@ -1,13 +1,17 @@
-
+/* PAGE BACKGROUND + FOOTER FIX */
 body {
   margin: 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
 
+  /* footer bottom fix */
+  display: flex;
+  flex-direction: column;
+
   /* Background image */
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
+      rgba(19, 59, 204, 0.4),
+      rgba(26, 9, 60, 0.4)
     ),
     url("../img/login.jpg");
 
@@ -16,12 +20,22 @@ body {
   background-repeat: no-repeat;
 }
 
+/* main content centers container */
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* container width */
 .container {
   max-width: 420px;
 }
 
+/* hide normal heading */
 .container > h3 {
-  display: none; 
+  display: none;
 }
 
 /* Card effect */
@@ -43,6 +57,7 @@ form::before {
   color: #333;
 }
 
+/* INPUTS */
 .form-control {
   height: 45px;
   border-radius: 4px;
@@ -59,7 +74,7 @@ form::before {
   box-shadow: none;
 }
 
-/*  LOGIN BUTTON  */
+/* LOGIN BUTTON */
 .btn-primary {
   background-color: #d43f8d;
   border: none;
@@ -88,6 +103,9 @@ form::before {
   background-color: #d43f8d;
   border: none;
   font-weight: 600;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
 }
 
 #verifyOtpBtn:hover {
@@ -99,4 +117,14 @@ form::before {
   text-align: center;
   color: #d43f8d;
   font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #064b84;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  font-size: 14px;
 }

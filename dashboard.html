@@ -14,36 +14,46 @@
 
 <body>
 
-<div class="dashboard-container">
+<!-- MAIN CONTENT (centers dashboard and pushes footer down) -->
+<div class="main-content">
 
-  <h2 class="dashboard-title">Dashboard</h2>
+  <div class="dashboard-container">
 
-  <!-- USER INFO CARD -->
-  <div class="user-card">
-    <h3 id="userName"></h3>
-    <p id="userEmail"></p>
-    <span class="status">Active</span>
-  </div>
+    <h2 class="dashboard-title">Dashboard</h2>
 
-  <!-- ACTION BUTTONS -->
-  <div class="action-buttons">
-    <a href="profile.html" class="btn btn-warning">Edit Profile</a>
-    <a href="logout.html" class="btn btn-danger">Logout</a>
+    <!-- USER INFO CARD -->
+    <div class="user-card">
+      <h3 id="userName"></h3>
+      <p id="userEmail"></p>
+      <span class="status">Active</span>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="action-buttons">
+      <a href="profile.html" class="btn btn-warning">Edit Profile</a>
+      <a href="logout.html" class="btn btn-danger">Logout</a>
+    </div>
+
   </div>
 
 </div>
 
+<!-- FOOTER -->
+<footer>
+  © 2026 User Authentication System | Built using HTML, CSS, Bootstrap & JavaScript
+</footer>
+
 <!-- DASHBOARD SCRIPT -->
 <script>
-  //  Protect dashboard
+  // Protect dashboard
   if (!localStorage.getItem("isLoggedIn")) {
     window.location.href = "login.html";
   }
 
-  //  Get user data
+  // Get user data
   let user = JSON.parse(localStorage.getItem("user"));
 
-  //  Display user data using DOM
+  // Display user data using DOM
   document.getElementById("userName").innerText = `Welcome, ${user.name}`;
   document.getElementById("userEmail").innerText = `Email: ${user.email}`;
 </script>

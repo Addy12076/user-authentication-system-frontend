@@ -1,12 +1,17 @@
-/*  PAGE BACKGROUND  */
+
+/* PAGE BACKGROUND */
 body {
   margin: 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
 
+  /* Flex makes footer stick bottom */
+  display: flex;
+  flex-direction: column;
+
   /* Background image */
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
+      rgba(31, 11, 11, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
     url("../img/image1.jpg");
@@ -15,6 +20,22 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* MAIN CONTENT takes available space */
+.main-content {
+  flex: 1;
+}
+
+
+/* footer at bottom */
+footer {
+  background: #0b6372;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
 
 
 /*  NAVBAR FIX */

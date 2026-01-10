@@ -4,9 +4,12 @@ body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
 
+  display: flex;
+  flex-direction: column;
+
   /* Background image */
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
+      rgba(181, 77, 77, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
     url("../img/regestration.jpg");
@@ -14,6 +17,15 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* footer at bottom */
+footer {
+  background: #0b6372;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
 
 /*  CENTER WRAPPER */

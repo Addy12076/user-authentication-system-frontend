@@ -1,8 +1,13 @@
 /* PAGE BACKGROUND */
+/* PAGE BACKGROUND */
 body {
   margin: 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
+
+  /* Footer bottom fix */
+  display: flex;
+  flex-direction: column;
 
   /* Background image */
   background-image: linear-gradient(
@@ -14,10 +19,26 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* MAIN CONTENT (center dashboard + push footer down) */
+.main-content {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* FOOTER */
+footer {
+  background: #212529;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+
 
 /*  DASHBOARD CONTAINER*/
 .dashboard-container {
