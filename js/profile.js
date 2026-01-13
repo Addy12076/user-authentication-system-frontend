@@ -17,5 +17,8 @@ document.getElementById("saveBtn").addEventListener("click", function () {
   }
 
   localStorage.setItem("user", JSON.stringify(user));
-  alert("Profile updated");
+  alert("Profile updated ✅");
+
+  // ✅ Redirect to Dashboard
+  window.location.href = "dashboard.html";
 });
