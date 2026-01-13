@@ -28,6 +28,28 @@ footer {
   font-size: 14px;
 }
 
+footer {
+  background: #0b6372;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* ✅ Footer link visible */
+footer a {
+  color: #ffd700;           /* Gold / Yellow */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ✅ Hover effect */
+footer a:hover {
+  color: #ffffff;           /* White on hover */
+  text-decoration: underline;
+}
+
+
 /*  CENTER WRAPPER */
 .register-wrapper {
   min-height: 100vh;

@@ -36,6 +36,18 @@ footer {
   font-size: 14px;
 }
 
+/* ✅ Footer link visible */
+footer a {
+  color: #ffd700;           /* Gold / Yellow */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ✅ Hover effect */
+footer a:hover {
+  color: #ffffff;           /* White on hover */
+  text-decoration: underline;
+}
 
 
 /*  NAVBAR FIX */
